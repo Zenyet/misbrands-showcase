@@ -1,0 +1,29 @@
+#message {
+  position: absolute;
+  z-index: 999;
+  top: calc(50vh - 2.5vw);
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 12px;
+  animation-name: init;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+}
+
+@keyframes init {
+  from {
+    transform: translateY(calc(2.5vw - 50vh));
+  }
+
+  80% {
+    transform: translateY(1rem) rotate(5deg);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,38 @@
+.svgCon {
+  width: 25%;
+  margin: 2em 1rem;
+
+  .svgImage {
+    width: 100%;
+    transition: filter .8s ease;
+  }
+
+  &:hover .svgImage {
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, .5));
+  }
+
+  &:hover .footer {
+    opacity: 1;
+  }
+
+
+  .footer {
+    display: flex;
+    opacity: 0;
+    transition: opacity .8s ease;
+    margin: 1.5rem 0;
+    justify-content: center;
+
+    .left, .right {
+      margin: 0 1rem;
+      display: inline-block;
+      width: 18%;
+      &:hover {
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, .3));
+      }
+    }
+    svg {
+      color: currentColor;
+    }
+  }
+}
