@@ -1,5 +1,14 @@
 #root {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: #182440;
+  background: #f0e9d8;
+  position: relative;
+
+  #app {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
+
