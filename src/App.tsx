@@ -2,6 +2,9 @@
 import { useState} from "react";
 import SVGCase from "./components/svgcase";
 import './App.scss';
+import useToast from "./hooks/useToast";
+import ToastContext from "./context/ToastContext";
+
 
 function App() {
     const [state] = useState({
@@ -133,15 +136,17 @@ function App() {
             },
         ]
     });
-
+    const [openToast, toastHolder] = useToast('已复制！');
     return (
-        <div id='app'>
-            {state.svgElements.map(svg => {
-                return <SVGCase key={svg.id} filename={svg.name}/>
-            })}
-        </div>
+        <ToastContext.Provider value={openToast}>
+            <div id='app'>
+                {toastHolder}
+                {state.svgElements.map(svg => {
+                    return <SVGCase key={svg.id} filename={svg.name}/>
+                })}
+            </div>
+        </ToastContext.Provider>
     )
-
 }
 
 export default App;
