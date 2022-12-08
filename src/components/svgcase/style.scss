@@ -2,12 +2,27 @@
   width: 25%;
   margin: 2em 1rem;
 
-  .svgImage {
+  .svg-wrapper {
+    display: inline-block;
     width: 100%;
     transition: filter .8s ease;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: currentColor;
+    }
+
+    .cls-1 {
+      fill: #231f20;
+    }
+
+    .cls-2 {
+      fill: #008bd3;
+    }
   }
 
-  &:hover .svgImage {
+  &:hover .svg-wrapper {
     filter: drop-shadow(0 0 16px rgba(0, 0, 0, .5));
   }
 
@@ -27,12 +42,11 @@
       margin: 0 1rem;
       display: inline-block;
       width: 18%;
+
       &:hover {
         filter: drop-shadow(0 0 8px rgba(0, 0, 0, .3));
       }
     }
-    svg {
-      color: currentColor;
-    }
+
   }
 }
