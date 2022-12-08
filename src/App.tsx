@@ -15,10 +15,6 @@ function App() {
                 name: 'relectron',
             },
             {
-                id: '003',
-                name: 'aws',
-            },
-            {
                 id: '004',
                 name: 'azure',
             },
@@ -48,20 +44,12 @@ function App() {
                 name: 'dotnet',
             },
             {
-                id: '011',
-                name: 'emacs',
-            },
-            {
                 id: '012',
                 name: 'ferris',
             },
             {
                 id: '013',
                 name: 'github',
-            },
-            {
-                id: '014',
-                name: 'gtk',
             },
             {
                 id: '015',
@@ -100,28 +88,12 @@ function App() {
                 name: 'oracle-sun',
             },
             {
-                id: '024',
-                name: 'php',
-            },
-            {
                 id: '025',
                 name: 'pip',
             },
             {
-                id: '026',
-                name: 'postgresql',
-            },
-            {
-                id: '027',
-                name: 'postgresql2',
-            },
-            {
                 id: '028',
                 name: 'python',
-            },
-            {
-                id: '029',
-                name: 'qt',
             },
             {
                 id: '030',
@@ -134,10 +106,6 @@ function App() {
             {
                 id: '032',
                 name: 'react',
-            },
-            {
-                id: '033',
-                name: 'ruby',
             },
             {
                 id: '034',
@@ -158,10 +126,6 @@ function App() {
             {
                 id: '038',
                 name: 'ubuntu',
-            },
-            {
-                id: '039',
-                name: 'vscodeST',
             },
             {
                 id: '040',
