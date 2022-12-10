@@ -5,13 +5,12 @@ import useDynamicImport from "../../hooks/useDynamicImport";
 import './style.scss';
 import React, {useRef} from "react";
 
-interface SVGInfo{
+interface Props {
     filename: string,
 }
 
 
-function SVGCase(props: SVGInfo) {
-    const {filename} = props;
+function SVGCase({filename}: Props) {
     const style = useWillChange();
     const [loading, svgHolder] = useDynamicImport(filename);
     const refer = useRef<null | HTMLElement>(null)

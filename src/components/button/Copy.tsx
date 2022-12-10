@@ -2,14 +2,14 @@ import React, {useContext} from "react";
 import useWillChange from "../../hooks/useWillChange";
 import ToastContext from "../../context/ToastContext";
 
-interface CopyInfo {
+interface Props {
     refer: React.MutableRefObject<HTMLElement | null>
 }
 
-function Copy(ci: CopyInfo) {
-    const {refer} = ci;
+function Copy({refer}: Props) {
     const style = useWillChange();
     const openToast = useContext(ToastContext);
+
     function handleCopyClick() {
         navigator.clipboard.writeText(refer.current?.innerHTML + '').then(() => {
             openToast();

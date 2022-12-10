@@ -1,7 +1,10 @@
 import useWillChange from "../../hooks/useWillChange";
 
-function Download(props: { filename: string }) {
-    const {filename} = props;
+interface Props {
+    filename: string
+}
+
+function Download({filename}: Props) {
     const style = useWillChange();
 
     function handleDownloadClick() {
