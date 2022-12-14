@@ -1,10 +1,11 @@
 import './style.scss';
+
 interface Info {
     msg: '默认消息' | string;
 }
 
 function Toast(config: Info) {
-    const {msg} = config;
+    let {msg} = config;
 
     return (
         <div id="message">

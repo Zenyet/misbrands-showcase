@@ -1,11 +1,12 @@
 import useWillChange from "../../hooks/useWillChange";
+import React from "react";
 
 interface Props {
     filename: string
 }
 
-function Download({filename}: Props) {
-    const style = useWillChange();
+let Download: React.FC<Props> = ({filename}) => {
+    let style = useWillChange();
 
     function handleDownloadClick() {
         const anchor = document.createElement('a');
@@ -29,5 +30,4 @@ function Download({filename}: Props) {
         </i>
     )
 }
-
 export default Download;

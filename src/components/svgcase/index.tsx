@@ -9,11 +9,10 @@ interface Props {
     filename: string,
 }
 
-
-function SVGCase({filename}: Props) {
-    const style = useWillChange();
-    const [loading, svgHolder] = useDynamicImport(filename);
-    const refer = useRef<null | HTMLElement>(null)
+let SVGCase: React.FC<Props> = ({filename}) => {
+    let style = useWillChange();
+    let [loading, svgHolder] = useDynamicImport(filename);
+    let refer = useRef<null | HTMLElement>(null)
 
 
     return (
@@ -32,6 +31,5 @@ function SVGCase({filename}: Props) {
         </div>
     )
 }
-
 
 export default SVGCase;

@@ -6,7 +6,7 @@ interface Props {
     refer: React.MutableRefObject<HTMLElement | null>
 }
 
-function Copy({refer}: Props) {
+let Copy: React.FC<Props> = ({refer}) => {
     const style = useWillChange();
     const openToast = useContext(ToastContext);
 
